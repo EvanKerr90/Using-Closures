@@ -1,7 +1,7 @@
   var wrapLog = function (callback, name) {
 
   return function(...param) {
-    result = callback(...param);
+    let result = callback(...param);
     console.log(name + '(' + param + ')' + ' => ' + result);
   }
 };
